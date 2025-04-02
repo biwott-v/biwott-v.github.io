@@ -1,0 +1,284 @@
+html{
+  scroll-behavior: smooth;
+}
+nav {
+  border-radius: 25px;
+  padding: 15px;
+  background-color: #181c25;
+  list-style: none;
+  height: 40px;
+  color: #a4b8d3;
+  margin-bottom: 30px;
+  padding: 12px;
+  opacity: 1;
+}
+h1{
+  font-size:79.99px;
+  font-family:neue-haas-grotesk-display, sans-serif;
+  font-weight:400;
+  color:#4d8fc8;
+  text-align: center;
+  padding:30px;
+ 
+}
+h2{
+  font-size: 60px;
+  font-weight: 200px;
+}
+
+body{
+  background-color:#10131c;
+  color:white;
+  text-align: center;
+  overflow-x:hidden;
+  max-width: 100%;
+}
+
+li{
+  display: inline;
+  padding:15px;
+  padding-right:20px;
+  margin-right:40px;
+  cursor: pointer;
+  padding-bottom:0px;  
+}
+a{
+  text-decoration: none;
+  color:#0087ca
+}
+
+#login{
+  margin-left: auto;
+  background-color:#a4b8d3;
+  border-radius: 10px;
+  color:black;
+  padding-right:18px;
+  margin-bottom:0px;
+
+}
+#login:hover{
+  color:#a4b8d3;
+  background-color:black;
+}
+#brighnessImage{
+  cursor: pointer;
+}
+
+ul{
+  margin:0px;
+  display:flex;
+}
+@keyframes slide-in {
+  from {
+    translate: 0 -20px;
+    scale: 20% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}
+
+
+
+pre{
+  text-align: center;
+  font-size: x-large;
+}
+
+p{
+  text-align: center;
+}
+
+#event{
+  cursor: pointer;
+}
+
+#contacts{
+  cursor: pointer;
+}
+
+#home{
+  cursor: pointer;
+}
+
+footer{
+  margin-top:120px;
+  background-color:black;
+  width:99.7%;
+  border-radius: 25px;
+  opacity: 0.9;
+  padding-top: 10px;
+}
+
+#logos{
+  display: block;
+  float:right;
+}
+
+#explore{
+  display:block;
+  float:center;
+  
+}
+#explore li :hover{
+  text-decoration: underline;
+}
+
+
+#logos  li img{
+  background-color:white;
+}
+
+#logos li img:hover{
+  background-color:#0087ca;
+}
+
+.box{
+  height: 130px;
+  width: 733px;
+  box-shadow: 0 4px 8px 0 rgba(143, 141, 141, 0.1);
+  display: flex;
+  gap:12px;
+}
+
+#main{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:40px;
+}
+
+.eventImage{
+  padding:4px;
+  margin:3px;
+}
+#events{
+  text-decoration:underline;
+}
+#mainPara{
+  font-size:larger;
+  margin-bottom: 70px;
+}
+
+
+#connect{
+  text-decoration: underline;
+}
+.underline {
+  display: inline-block;
+  position: relative;
+}
+
+.underline:after {
+  content: '';
+  width: 0px;
+  height: 2px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: wheat;
+  transition: 300ms;
+}
+
+.underline:hover:after {
+  width: 100%;
+}
+
+.underline:not(:hover):after {
+  right: 0;
+  left: auto;
+}
+.scroll {
+  position: relative;
+  height: 400px;
+  margin-bottom: 60px;
+  display: flex;
+  width: fit-content;
+  gap: 30px;
+}
+
+.scroll img {
+  margin: 0px 0px;
+  box-shadow: 2px 2px 8px #0087ca;
+  border-radius: 25px;
+  margin-bottom: 70px;
+}
+
+.scroll {
+  animation: bannermove 60s linear infinite;
+}
+
+@keyframes bannermove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.scroll1 {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  margin-top:90px;
+  position: relative;
+  height: 130px;
+  margin-bottom: 60px;
+  display: flex;
+  width: fit-content;
+  gap: 30px;
+}
+
+.scroll1 img {
+  margin: 0px 0px;
+  border-radius: 25px;
+  margin-bottom: 70px;
+}
+
+.scroll1 {
+  animation: bannermove 12000s linear infinite;
+}
+
+h3{
+  font-size:larger;
+  font-weight: 50px;
+}
+
+.error {
+  color: #ff4757;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 50px;
+}
+
+#loadMore {
+  background: #4d8fc8;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 1.1em;
+  margin: 30px 0;
+  transition: all 0.3s ease;
+}
+
+nav ul {
+  justify-content: center !important;
+  padding-left: 0;
+}
+
+#loadMore:hover {
+  background: #3a6c9b;
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+.scroll img:hover, 
+.scroll1 img:hover,
+.box img:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
+    cursor: zoom-in;
+}
